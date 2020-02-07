@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 - loops</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        body { padding: 30px; }
+    </style>
+</head>
+<body>
+    <div class="dogs-list"></div>
+    <!--- Start JavaScript --->
+<script>
+    // const name = prompt("What is your name?");
+
+
+    const dogsList = document.querySelector('.dogs-list');
+    const dogs = [
+        {name : 'linus', type : 'dog', breed : 'golden retriever'},
+        {name : 'hades', type : 'dog', breed : 'greyhound'},
+        {name : 'snoosje', type : 'cat', breed : 'siamese'}
+    ];
+
+    for( let dog of dogs) {
+        const dogDiv = document.createElement('div');
+        dogDiv.innerText = `${dog.name} is a ${dog.type} and he is a ${dog.breed}`;
+
+        dogDiv.classList.add('jumbotron', 'text-center');
+        dogsList.appendChild(dogDiv);
+    }
+
+    if(name === "Jonathan") {
+        alert("hello!");
+    } else {
+        console.groupCollapsed("names");
+            console.log(name);
+        
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7 - functions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        body { padding: 30px; }
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <button type="button" class="btn btn-danger"
+        onclick="sayHello('something')">
+            My Button
+        </button>
+        <button type="button" class="btn btn-danger"
+        onclick="sayHello()">
+            My Button2
+        </button>
+    </div>
+
+
+    <!--- Start JavaScript --->
+<script>
+
+    function sayHello(message = 'default'){ console.log(message);}
+
+    sayHello();
+</script>
+</body>
+</html>

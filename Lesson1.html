@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gettin Started with JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        body { padding: 30px; }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <h1> This is my first JavaScript project.</h1>
+
+    <button type="button" class="btn btn-primary"
+    onclick="changeText(document.getElementById('input').value)">
+        Enter your name
+    </button>
+
+    <input autocomplete='off' class='loginInput' type="text" name="input" id="input" value="Linny">
+</div>
+
+<!--- Start JavaScript --->
+<script>
+    const header = document.querySelector('h1');
+
+    function changeText(name){
+        header.innerText = name + " look, now I'm new!";
+    }
+</script>
+
+</body>
+</html>
